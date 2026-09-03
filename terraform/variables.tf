@@ -15,3 +15,8 @@ variable "kubernetes_version" {
   type        = string
   default     = "1.36"
 }
+
+variable "worker_key_name" {
+  description = "AWS EC2 key pair used to SSH into self-managed EKS worker nodes"
+  type        = string
+}
