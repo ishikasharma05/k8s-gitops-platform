@@ -38,7 +38,7 @@ module "eks" {
       subnet_ids = module.vpc.public_subnets
 
       # EC2 instance configuration
-      instance_type = "t3.medium"
+      instance_type = "t3.micro" 
 
       min_size     = 2
       max_size     = 3
