@@ -23,7 +23,7 @@ module "vpc" {
   # No NAT Gateway.
   # Worker nodes are placed in public subnets
   # to avoid NAT Gateway hourly/data-processing charges.
-  enable_nat_gateway = false
+  enable_nat_gateway = true
 
   enable_dns_hostnames = true
   enable_dns_support   = true
