@@ -22,7 +22,7 @@ module "eks" {
 
       subnet_ids = module.vpc.private_subnets
 
-      instance_type = "t3.micro"
+      instance_type = "m7i-flex.large"
 
       min_size     = 2
       max_size     = 3
